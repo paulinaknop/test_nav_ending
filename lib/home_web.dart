@@ -24,7 +24,7 @@ class _HomeWebState extends State<HomeWeb> {
               onPressed: () {},
               child: const Text(
                 "Go to about",
-                style: TextStyle(fontSize: 40.0),
+                style: TextStyle(fontSize: 40.00),
               ),
             )
           ],
