@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
 class AboutWeb extends StatefulWidget {
-  const AboutWeb({Key? key}) : super(key: key);
+  final str;
+
+  const AboutWeb({
+    Key? key,
+    this.str,
+  }) : super(key: key);
 
   @override
   _AboutWebState createState() => _AboutWebState();
@@ -16,12 +21,18 @@ class _AboutWebState extends State<AboutWeb> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "About web",
+              "About Web",
+              style: TextStyle(fontSize: 40.0),
+            ),
+            Text(
+              "Argument ${widget.str.toString()}",
               style: TextStyle(fontSize: 40.0),
             ),
             MaterialButton(
               color: Colors.cyan,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               child: const Text(
                 "Go back",
                 style: TextStyle(fontSize: 40.0),

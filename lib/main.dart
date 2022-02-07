@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:test_nav/home_web.dart';
+import 'package:url_strategy/url_strategy.dart';
+
+import 'route_generator.dart';
 
 void main() {
+  setPathUrlStrategy();
   runApp(const MyApp());
 }
 
@@ -10,8 +13,26 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeWeb(),
+    return MaterialApp(
+      // routes: {
+      //   '/': (_) => HomeWeb(),
+      //   '/about': (_) => AboutWeb(),
+      // },
+      initialRoute: '/',
+      onGenerateRoute: (settings) => RouteGenerator.generateRoute(settings),
+      //     (settings) {
+      //   final args = settings.arguments;
+      //   switch (settings.name) {
+      //     case '/':
+      //       return MaterialPageRoute(builder: (_) => HomeWeb());
+      //     case '/about':
+      //       return MaterialPageRoute(
+      //         builder: (context) => AboutWeb(args),
+      //       );
+      //     default:
+      //       return _errorRoute();
+      //   }
+      // },
     );
   }
 }

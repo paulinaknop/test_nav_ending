@@ -21,7 +21,10 @@ class _HomeMobileState extends State<HomeMobile> {
             ),
             MaterialButton(
               color: Colors.cyan,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context)
+                    .pushNamed("/about", arguments: " Paulina Knop");
+              },
               child: const Text(
                 "Go to about",
                 style: TextStyle(fontSize: 40.0),

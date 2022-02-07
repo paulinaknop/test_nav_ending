@@ -21,10 +21,17 @@ class _HomeWebState extends State<HomeWeb> {
             ),
             MaterialButton(
               color: Colors.cyan,
-              onPressed: () {},
+              onPressed: () {
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(builder: (context) => const AboutWeb()),
+                // );
+                Navigator.of(context)
+                    .pushNamed("/about", arguments: " Paulina Knop");
+              },
               child: const Text(
                 "Go to about",
-                style: TextStyle(fontSize: 40.00),
+                style: TextStyle(fontSize: 40.0),
               ),
             )
           ],
