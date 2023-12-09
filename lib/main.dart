@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:url_strategy/url_strategy.dart';
-
 import 'route_generator.dart';
 
 void main() {

@@ -1,4 +1,4 @@
-package com.example.test_nav
+package com.codingliquids.navigations_complete
 
 import io.flutter.embedding.android.FlutterActivity
 

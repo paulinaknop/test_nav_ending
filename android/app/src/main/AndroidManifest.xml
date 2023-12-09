@@ -1,6 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.paulinaknop.test_nav">
-   <application
-        android:label="test_nav"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="navigations_complete"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
